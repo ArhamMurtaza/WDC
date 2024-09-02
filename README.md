@@ -52,3 +52,14 @@ Daily from Monday-Thurday.
 > label tag
 > input tag (all types & attributes)\
 > Assingment (Use all input types)
+
+# 31 aug 2024
+
+**HTML**
+> accept attribute (form input tag)\
+> select tag (options, values)\
+> Datalist tag\
+> Fieldset & legend tag\
+**CSS**\
+> Styling methods (inline, internal, external)\
+> Selectors (tagname, class, id)
