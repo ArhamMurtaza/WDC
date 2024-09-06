@@ -58,8 +58,41 @@ Daily from Monday-Thurday.
 **HTML**
 > accept attribute (form input tag)\
 > select tag (options, values)\
-> Datalist tag\
-> Fieldset & legend tag\
+> datalist tag\
+> fieldset & legend tag\
 **CSS**\
 > Styling methods (inline, internal, external)\
 > Selectors (tagname, class, id)
+
+# 2 sep 2024
+
+> Practice of styling methods:\
+> inline\
+> internal\
+> external\
+> Selectors:\
+> tagname\
+> id \
+> class
+
+# 3 sep 2024
+
+> Different Coloring methods:\
+> colorname\
+> rgb\
+> hsl\
+> hexcode
+
+# 4 sep 2024
+
+> Background property:\
+> Image as background (url)\
+> Gradient as background (Linear, Radical, Conic)
+
+# 5 sep 2024
+
+> Box Model:\
+> margin, padding\
+> border (all border properties):\
+> width, style, color, radius\
+> float & clear peoperties
