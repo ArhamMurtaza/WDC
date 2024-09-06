@@ -1,0 +1,34 @@
+.maindiv {
+  display: inline-flex;
+  height: 200px;
+  width: auto;
+}
+
+p {
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.colorname,
+.rgb,
+.hsl,
+.hexcode {
+  margin-left: 2px;
+  border-radius: 20px;
+}
+
+.colorname {
+  background-color: aqua;
+}
+
+.rgb {
+  background-color: rgb(255, 69, 208);
+}
+
+.hsl {
+  background-color: hsl(60, 100%, 50%);
+}
+
+.hexcode {
+  background-color: #79009e;
+}

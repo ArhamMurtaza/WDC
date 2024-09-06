@@ -1,0 +1,25 @@
+*{
+    color: white;
+}
+
+
+body{
+    background-color: black;
+}
+
+
+.box{
+    padding-left: 10px;
+    margin: 10px;
+    margin-bottom: -85px;
+    border: 5px solid white;
+    border-radius: 10px;
+}
+
+.circle{
+    float: right;
+    height: 150px;
+    width: 150px;
+    border: 30px double white;
+    border-radius: 50%;
+}

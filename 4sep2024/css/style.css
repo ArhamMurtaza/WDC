@@ -1,0 +1,17 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+.background_img{
+    background-image: url(images/youtube.png);
+}
+
+.g_background{
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(45deg,red, orange, yellow, green, blue, indigo, violet, red);
+}
+
