@@ -1,0 +1,70 @@
+body{
+    padding: 5px 10px 10px;
+}
+
+.rows{
+    display: flex;
+    margin-top: 30px;
+}
+
+.r1{
+    margin-top: 0px;
+}
+
+.greenbox{
+    background-color: rgb(0, 255, 0);
+    margin-right: 40px;
+    border: 10px solid;
+    border-radius: 5px;
+    height: 150px
+}
+
+.smallbox{
+    width: 10%;
+}
+
+.midbox{
+    width: 20%;
+}
+
+.largebox{
+    width: 69.5%;
+}
+.r1c1{
+    margin-right: 100px;
+}
+
+.r1c2{
+    margin-right: 100px;
+}
+
+.r1c3{
+    margin-right: 0px;
+}
+
+.r2c3{
+    margin-right: 0px;
+}
+
+.r3c3{
+    margin-right: 0px;
+}
+
+.r4c1{
+    width: 26%;
+}
+
+.r4c2{
+    width: 10%;
+}
+.r4c3{
+    width: 26%;
+}
+.r4c4{
+    width: 10%;
+}
+
+.r4c5{
+    width: 26%;
+    margin-right: 0px;
+}

@@ -1,0 +1,48 @@
+body{
+    width: 100%;
+}
+
+h1, h3, p, ul{
+    margin: 5px;
+}
+
+p{
+    font-size: 0.8em;
+}
+
+.r1, .r2, .r3{
+    width: 100%;
+    display: flex;
+}
+
+.profile-picture{
+    height: 100px;
+    width: 100px;
+    margin-bottom: 10px;
+    background-color: aqua;
+    border: 2px solid lightgray;
+}
+
+.pfp{
+    border-bottom: 2px solid gray ;
+}
+
+.personalinfo{
+    margin-left: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.contact{
+    border-bottom: 2px solid gray;
+    max-width: 100px;
+    word-wrap: break-word;
+}
+
+.aboutme{
+    margin-left: 10px;
+    border-bottom: 2px solid gray;
+}
+
+.techskills{
+    border-bottom: 2px solid gray;
+}
