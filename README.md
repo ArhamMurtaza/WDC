@@ -96,3 +96,22 @@ Daily from Monday-Thurday.
 > border (all border properties):\
 > width, style, color, radius\
 > float & clear peoperties
+
+# 9 sep 2024
+
+> How to import fonts in css\
+> How to use fonts in css\
+> Font properties:\
+> font-style, font-variant, font-weight, font-size/line-height, font-family\
+> Text properties:\
+> Text-align, text-decoration, text-transform, text-indent, word-spacing, letter-spacing, line-height, text-shadow
+
+# 10 sep 2024
+> How to target child element\
+> Display (none, absolute, relative)\
+> Hidden Visibility\
+> Box shadow:\
+> horizontal off-set\
+> vertical off-set\
+> Blur\
+> color
