@@ -115,3 +115,12 @@ Daily from Monday-Thurday.
 > vertical off-set\
 > Blur\
 > color
+
+# 11 sep 2024
+
+> How to add icons through cdn, svg and images\
+> Navbar ( Horizontal Navbar & Vertical Navbar )\
+> Assignment 1:\
+ Create navbars( both horizontal and vertical ) using html and style it using css\
+> Assignment 2:\
+ Create a table using html and style it using css
