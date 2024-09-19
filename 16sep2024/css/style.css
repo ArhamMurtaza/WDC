@@ -76,7 +76,7 @@ tr:hover {
 .dropdown{
     position: relative;
     top:75px;
-    left: 46%;
+    left: 38%;
     background-color: red;
     border-radius: 10px;
     padding: 10px;
@@ -85,11 +85,16 @@ tr:hover {
     color: white;
     font-weight: bold;
     font-size: 1.3em;
-    
+}
+
+body > div.dropdown > ul > li{
+    margin: 10px;
 }
 
 .dropdown > ul, .dropdown-submenu1, .dropdown-submenu2{
     list-style: none;
+    display: flex;
+    margin: 10px;
 }
 
 .dropdown-item1, .dropdown-item2{
@@ -138,6 +143,7 @@ tr:hover {
     color: black;
     font-size: 1.5em;
     margin: 10px;
+    font-weight: bolder;
 }
 
 .google:link{

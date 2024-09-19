@@ -1,0 +1,24 @@
+body{
+    padding: 20px 50px;
+    margin: 20px 50px;
+    font-size: large;
+}
+
+.cards{
+    display: flex;
+    width: 100%;
+}
+
+.card1, .card2, .card3, .card4{
+    width: 300px;
+    height: 450px;
+    margin-left: 50px;
+    padding: 25px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+.card1{
+    background-image: url("/18sep2024/images/city_background.jpg");
+    image
+}
