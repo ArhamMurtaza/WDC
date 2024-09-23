@@ -1,0 +1,149 @@
+@keyframes rainbow-border {
+    0% {border-color: red;}
+    14% {border-color: orange;}
+    28% {border-color: yellow;}
+    42% {border-color: green;}
+    56% {border-color: blue;}
+    70% {border-color: indigo;}
+    84% {border-color: violet;}
+    100% {border-color: red;}
+}
+
+@keyframes move {
+    0% {background-color: black;}
+    100% {background-color: white;}
+}
+
+@keyframes fly {
+    0% {transform: translate(0px, 0px);}
+    25% {transform: translate(100px, 0px);}
+    50% {transform: translate(100px, 100px);}
+    75% {transform: translate(0px, 100px);}
+    100% {transform: translate(0px, 0px);}
+}
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+body {
+    background-color: gray;
+    margin: 0px;
+    padding: 0px;
+}
+
+.box {
+    background-position: center;
+    background-size: cover;
+    image-orientation: flip;
+    height: 50px;
+    width: 100px;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    border-radius: 30px;
+    border-color: white;
+    border-width: 3px;
+    border-style: solid;
+    animation-name: rainbow-border;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.circle {
+    background-color: black;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    position:relative;
+    top: 10px;
+    left: 10px;
+}
+
+.box:hover > .circle{
+    transition-timing-function: ease-in;
+    transition: 1s;
+    left: 60px;
+    animation-name: move;
+    animation-duration: 1s;
+    background-color: white;
+}
+
+.form{
+    position: absolute;
+    top: 25px;
+    left: 25px;
+    
+}
+
+input{
+    height: 30px;
+    width: 210px;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    border: 2px solid black;
+}
+
+.btn{
+    height: 40px;
+    width: 80px;
+    margin: 10px;
+    margin-left: 33%;
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+
+input:focus{
+    transform: scale(1.15);
+    transition: 0.5s;
+    border: 0px
+}
+
+.btn:hover{
+    transform: scale(1.15);
+    transition: 0.5s;
+    animation-name: rainbow-border;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+
+.flying-box{
+    position: relative;
+    top: 300px;
+    left: 10px;
+}
+
+.fbox{
+    height: 100px;
+    width: 100px;
+    background-color: blue  ;
+    animation-name: fly;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+.fbox:hover{
+    animation-play-state: paused;
+}
+
+.rotate-box{
+    position: relative;
+    top: 200px;
+    left: 300px;
+}
+
+.rbox{
+    height: 100px;
+    width: 100px;
+    background-color: red  ;
+    animation-name: rotate;
+    animation-duration: 5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
