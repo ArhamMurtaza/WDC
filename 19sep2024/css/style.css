@@ -28,7 +28,7 @@
 }
 
 body {
-    background-color: gray;
+    background-color: black;
     margin: 0px;
     padding: 0px;
 }
@@ -83,7 +83,7 @@ input{
     margin: 10px;
     padding: 5px;
     border-radius: 10px;
-    border: 2px solid black;
+    border: 3px solid gray;
 }
 
 .btn{
@@ -92,7 +92,7 @@ input{
     margin: 10px;
     margin-left: 33%;
     padding: 5px;
-    border: 2px solid black;
+    border: 3px solid gray;
     border-radius: 10px;
 }
 
@@ -120,6 +120,7 @@ input:focus{
     height: 100px;
     width: 100px;
     background-color: blue  ;
+    border: 2px solid white;
     animation-name: fly;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
@@ -141,9 +142,14 @@ input:focus{
     height: 100px;
     width: 100px;
     background-color: red  ;
+    border: 2px solid white;
     animation-name: rotate;
     animation-duration: 5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+.rbox:hover{
+    animation-play-state: paused;
 }
