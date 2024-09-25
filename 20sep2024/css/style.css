@@ -1,0 +1,62 @@
+@keyframes r2l-swipe {
+    0% {
+        transform: translateX(200%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+@keyframes l2r-swipe {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(44.25%);
+    }
+}
+
+body {
+    /* background-image: url("/18sep2024/images/bg_image.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat; */
+    background-color: black;
+    padding: 0px 50px;
+    font-size: large;
+    overflow-x: hidden;
+}
+
+h1 {
+    color: white;
+    font-size: 50px;
+}
+
+.cards-r2l {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    animation: r2l-swipe 5s ease-out 1;
+}
+
+.cards-l2r{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    position: relative;
+    top: 30px;
+    animation: l2r-swipe 5s ease-out 1;
+    transform: translateX(44.25%);
+}
+
+.card {
+    background-color: gray;
+    color: white;
+    height: 200px;
+    width: 150px;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 5px;
+}
