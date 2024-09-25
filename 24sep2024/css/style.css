@@ -1,0 +1,119 @@
+@keyframes road{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-10000px);
+    }
+}
+
+@keyframes buildings{
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-10000px);
+    }
+}
+
+@keyframes wheel{
+    from{
+        transform: rotate(0deg);
+        scale: 0.9;
+    }
+    to{
+        transform: rotate(360deg);
+        scale: 0.9;
+    }
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.background{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../images/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.road{
+    height: 200px;
+    width: 1000%;
+    background-image: url(../images/road.jpg);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    animation: road 30s linear infinite;
+}
+
+.road:hover{
+    animation-duration: 1s;
+}
+
+.buildings{
+    height: 300px;
+    width: 1000%;
+    background-image: url(../images/city.png);
+    background-repeat: repeat-x;
+    position: absolute;
+    bottom: 150px;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    animation: buildings 120s linear infinite;
+}
+
+
+.car{
+    height: 150px;
+    width: 450px;
+    background-image: url(../images/car.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.car:hover > .wheel1, .car:hover > .wheel2{
+    animation-duration: 1s;
+}
+
+
+
+.wheel1{
+    height: 90px;
+    width: 90px;
+    background-image: url(../images/wheel.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    position: relative;
+    top: 75px;
+    left: 310px;
+    animation: wheel 3s linear infinite;
+}
+
+.wheel2{
+    height: 90px;
+    width: 90px;
+    background-image: url(../images/wheel.png);
+    background-size: cover;
+    background-position: center;
+    z-index: 3;
+    position: relative;
+    top: -15px;
+    left: 35px;
+    animation: wheel 3s linear infinite;
+}
