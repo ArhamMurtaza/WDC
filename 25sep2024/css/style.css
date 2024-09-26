@@ -1,93 +1,208 @@
-@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-
-@font-face {
-    font-family: castoro;
-    src: url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-    ;
-}
-
 * {
-    margin: 0px;
-    padding: 0px;
+  margin: 0px;
+  padding: 0px;
 }
 
-a{
-    font-family: sans-serif;
-    text-decoration: none;
-    display: inline-flex;
+a {
+  font-family: sans-serif;
+  text-decoration: none;
+  display: inline-flex;
+  color: white;
 }
 
-a > h2{
-    position: relative;
-    top: 20px;
-    left: 30px;
-    color: white;
+a > h2 {
+  position: relative;
+  top: 20px;
+  left: 30px;
+  color: white;
 }
 
-a > p{
-    color: white;
-    position: relative;
-    left: 800px;
-    top: 20px;
-    margin-left: 20px;
+a > p {
+  color: white;
+  position: relative;
+  left: 800px;
+  top: 20px;
+  margin-left: 20px;
 }
 
-.section1{
-    height: 800px;
-    width: 100%;
-    background-color: #ECEEEC;
+svg {
+  color: white;
 }
 
-.section1 > img{
-    object-fit: cover;
-    position: absolute;
-    left: 50%;
-    top: 0px;
-    height: 800px;
-    width: 50%;
-    z-index: 0;
+.section1 {
+  overflow: hidden;
+  height: 1000px;
+  width: 100%;
+  background-color: #eceeec;
 }
 
-.navbar{
-    position:absolute;
-    top: 25px;
-    left: 40px;
-    right: 40px;
-    height: 70px;
-    width: 94%;
-    background-color: rgb(20, 20, 20);
-    z-index: 1;
+.section1 > img {
+  object-fit: cover;
+  position: absolute;
+  left: 50%;
+  top: 0px;
+  height: inherit;
+  width: 50%;
+  z-index: 0;
+  filter: contrast(1.05) brightness(0.85);
 }
 
-.intro-text{
-    width: 450px;
-    position: relative;
-    top: 50%;
-    left: 70px;
+.navbar {
+  position: relative;
+  top: 25px;
+  left: 40px;
+  right: 40px;
+  height: 70px;
+  width: 94%;
+  background-color: rgb(20, 20, 20);
+  z-index: 1;
 }
 
-.intro-text > p{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: orangered;
-    font-size: 20px;
-    letter-spacing: 3px;
+.navbar-links {
+  position: relative;
+  top: -20px;
+  right: -35%;
+  position: relative;
 }
 
-.intro-text > h2{
-    font-family: serif;
-    font-size: 4em;
-    font-weight: lighter;
-    word-spacing: 0px;
-    line-height: 55px;
+.intro-text {
+  width: 38%;
+  position: relative;
+  top: 35%;
+  left: 100px;
 }
 
-.social-icons{
-    position: absolute;
-    top: 500px;
-    right: 20px;
-    z-index: 2;
+.intro-text > p {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: orangered;
+  font-size: 26px;
+  letter-spacing: 3px;
+}
+
+.intro-text > h2 {
+  font-family: serif;
+  font-size: 6em;
+  font-weight: lighter;
+  word-spacing: 0px;
+  line-height: 80px;
+}
+
+.social-icons {
+  position: absolute;
+  top: 530px;
+  right: 60px;
+  z-index: 2;
 }
 
 .social-icons > ul > li {
-    
+  list-style: none;
+  margin-top: 20px;
+}
+
+.section1 > .btn {
+  width: 210px;
+  height: 55px;
+  border: 2px solid black;
+}
+
+.white {
+  color: black;
+  background-color: #eceeec;
+}
+
+.white:hover {
+  background-color: black;
+  transition: 0.5s;
+}
+
+.white:hover > a {
+  color: white;
+}
+
+.white > a {
+  color: black;
+}
+
+.black {
+  color: white;
+  background-color: black;
+  transition: 0.5s;
+}
+
+.black:hover {
+  background-color: orangered;
+}
+
+.transparent {
+  width: 180px !important;
+  height: 55px;
+  color: white;
+  background-color: transparent;
+  border: 2px solid white !important;
+}
+
+.about-me {
+  position: absolute;
+  top: 850px;
+  left: 100px;
+}
+
+.get-in-touch {
+  position: absolute;
+  top: 850px;
+  left: 330px;
+}
+
+.cv {
+  position: absolute;
+  top: 850px;
+  left: 1020px;
+}
+
+.btn > a {
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-size: 13px;
+  font-weight: bold;
+}
+
+.upper-border {
+  position: absolute;
+  top: 875px;
+  left: 820px;
+  background-color: transparent;
+  border-top: 2px solid white;
+  width: 200px;
+  height: 100px;
+}
+
+.right-border {
+  position: absolute;
+  top: 780px;
+  right: 70px;
+  background-color: transparent;
+  border-right: 0.5px solid white;
+  width: 100px;
+  height: 100px;
+}
+
+.scroll-icon {
+  position: absolute;
+  top: 900px;
+  right: 40px;
+  width: 60px;
+  height: 60px;
+  border: 2px solid white;
+  border-radius: 50%;
+}
+
+.scroll-icon > a {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
