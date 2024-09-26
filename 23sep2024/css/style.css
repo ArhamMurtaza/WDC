@@ -1,18 +1,19 @@
-@keyframes rotate {
-    from{
-        transform: rotate(0deg);
+@keyframes move-rotate {
+    0% {
+        transform: translate(0%, 0%) rotate(0deg) scale(1);
     }
-    to{
-        transform: rotate(360deg);
+    25% {
+        transform: translate(200%, 50%) rotate(-90deg) scale(2);
     }
-}
-
-@keyframes move {
-    0%{transform: translateX(0%,0%);}
-    25%{transform: translate(200%,0%);}
-    50%{transform: translate(200%,200%);}
-    75%{transform: translate(0%,200%);}
-    100%{transform: translate(0%,0%);}
+    50% {
+        transform: translate(200%, 200%) rotate(-180deg) scale(1);
+    }
+    75% {
+        transform: translate(50%, 200%) rotate(-270deg)  scale(2);
+    }
+    100% {
+        transform: translate(0%, 0%) rotate(-360deg) scale(1);
+    }
 }
 
 
@@ -28,7 +29,5 @@ body{
     width: 100px;
     border-radius: 50%;
     background:conic-gradient(red,blue  ,green,yellow,purple, orange, red);
-    animation: move linear 5s infinite, rotate 5s linear 0s infinite;
+    animation: move-rotate 5s linear infinite;
 }
-
-.rainbow-circle:hover

@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+
+@font-face {
+    font-family: castoro;
+    src: url("https://fonts.googleapis.com/css2?family=Castoro:ital@0;1&family=Public+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+    ;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+a{
+    font-family: sans-serif;
+    text-decoration: none;
+    display: inline-flex;
+}
+
+a > h2{
+    position: relative;
+    top: 20px;
+    left: 30px;
+    color: white;
+}
+
+a > p{
+    color: white;
+    position: relative;
+    left: 800px;
+    top: 20px;
+    margin-left: 20px;
+}
+
+.section1{
+    height: 800px;
+    width: 100%;
+    background-color: #ECEEEC;
+}
+
+.section1 > img{
+    object-fit: cover;
+    position: absolute;
+    left: 50%;
+    top: 0px;
+    height: 800px;
+    width: 50%;
+    z-index: 0;
+}
+
+.navbar{
+    position:absolute;
+    top: 25px;
+    left: 40px;
+    right: 40px;
+    height: 70px;
+    width: 94%;
+    background-color: rgb(20, 20, 20);
+    z-index: 1;
+}
+
+.intro-text{
+    width: 450px;
+    position: relative;
+    top: 50%;
+    left: 70px;
+}
+
+.intro-text > p{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: orangered;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+
+.intro-text > h2{
+    font-family: serif;
+    font-size: 4em;
+    font-weight: lighter;
+    word-spacing: 0px;
+    line-height: 55px;
+}
+
+.social-icons{
+    position: absolute;
+    top: 500px;
+    right: 20px;
+    z-index: 2;
+}
+
+.social-icons > ul > li {
+    
+}
