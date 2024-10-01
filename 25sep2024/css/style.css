@@ -106,7 +106,7 @@ svg {
 .navbar-links {
     position: relative;
     top: -20px;
-    right: -35%;
+    right: -5%;
     margin: 0px auto;
 }
 
@@ -126,7 +126,7 @@ svg {
 
 .intro-text>h2 {
     font-family: serif;
-    font-size: 6em;
+    font-size: 5em;
     font-weight: lighter;
     word-spacing: 0px;
     line-height: 80px;
@@ -783,13 +783,18 @@ svg {
 
 /* Media Queries */
 
+@media (max-width: 1245px) AND (min-width: 993px) {
+    .transparent{
+        display: none;
+    }
+}
 @media (min-width: 1245px) {
     .btn.white.get-in-touch {
         left: 320px;
         top: 590px;
     }
 }
-@media (min-width: 992px) {
+@media (max-width: 992px) {
     /* Styles for screens 1200px and below */
     .navbar {
         height: 70px;
@@ -812,7 +817,6 @@ svg {
         font-size: 3rem;
         width: 100%;
     }
-
     .section1 > img {
         width: 50%;
     }
@@ -826,6 +830,9 @@ svg {
     .white {
         top: 510px;
         left: 280px;
+    }
+    .transparent{
+        display: none;
     }
 
     .upper-border {
@@ -1667,7 +1674,7 @@ svg {
         left: 60px;
     }
     .white {
-        top: 510px;
+        top: 590px;
         left: 280px;
     }
     .cv {
