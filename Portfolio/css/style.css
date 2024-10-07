@@ -1,0 +1,202 @@
+@import url("https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;400;500;600;700&display=swap");
+
+:root {
+  --color-primary: #007bff;
+  --color-secondary: #6c757d;
+  --color-success: #28a745;
+  --color-danger: #dc2626;
+  --color-warning: #ffc107;
+  --color-info: #17a2b8;
+  --color-light: #ffffff;
+  --color-dark: #000000;
+  --color-gray: #707070;
+  --color-black: #000000;
+  --color-white: #ffffff;
+  --color-red: #ff0000;
+  --color-green: #00ff00;
+  --color-blue: #0000ff;
+  --color-yellow: #ffff00;
+  --color-cyan: #00ffff;
+  --color-magenta: #ff00ff;
+  --color-orange: #ffa500;
+  --color-purple: #800080;
+  --color-pink: #ffc0cb;
+  --color-brown: #a52a2a;
+  --font-base: "Bai Jamjuree";
+  --color-body: #b6cbce;
+  --color-heading: #eef3db;
+  --color-base: #000000;
+  --color-base2: rgb(75, 75, 75);
+  --color-accent: #80cbf7;
+  --color-accent2: #2d23c2;
+  --sidebar-width: 240px;
+}
+
+body {
+  font-family: var(--font-base), sans-serif;
+  color: var(--color-white);
+  background-color: var(--color-base);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-body);
+  transition: all 0.25s ease;
+}
+
+a:hover {
+  color: var(--color-accent);
+}
+
+img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.full-height {
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.25);
+}
+
+.text-brand {
+  color: var(--color-accent);
+}
+
+/* NAVBAR */
+
+.navbar {
+  background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75));
+}
+
+.navbar .nav-link {
+  font-size: 1.125rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--color-light);
+}
+
+.navbar .nav-link:hover {
+  color: var(--color-accent);
+  transition: all 0.2s ease;
+  transform: translateX(5px) scale(1.1);
+}
+
+#navbarNav > ul > li > a.active {
+  color: var(--color-accent);
+  transform: translateX(10px) scale(1.2);
+  transition: all 0.2s ease;
+}
+
+/* Buttons */
+
+.btn {
+  padding: 12px 30px;
+  font-weight: bold;
+}
+
+.btn-brand {
+  background-color: var(--color-accent);
+  border-color: var(--color-accent);
+}
+
+.btn-brand:hover,
+.btn-brand:focus {
+  background-color: var(--color-black);
+  color: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: scale(1.025);
+  transition: all 0.2s ease;
+}
+
+/* LINKS */
+
+.mail-link {
+  font-weight: 500;
+  position: relative;
+  color: var(--color-white);
+  font-size: 1.125rem;
+}
+
+.mail-link:hover {
+  color: var(--color-accent);
+}
+
+.mail-link::after {
+  content: "";
+  position: absolute;
+  top: 85%;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--color-accent);
+  transition: all 0.5s ease;
+}
+
+.mail-link:hover::after {
+  width: 100%;
+}
+
+/* EDUCATION, EXPERIENCE, CERTIFICATIONS */
+
+.edu,
+.exp,
+.cert {
+  background-color: var(--color-base);
+  border: 2px solid var(--color-accent);
+  border-radius: 14px;
+  padding: 15px;
+}
+
+.card {
+  background-color: var(--color-base);
+  border: 3px solid var(--color-accent);
+  border-radius: 14px;
+  padding: 15px;
+}
+
+.card:hover {
+  cursor: pointer;
+  border: 3px solid var(--color-accent);
+  transform: scale(1.05);
+}
+
+.shadow-effect:hover {
+  transform: translateY(-8px);
+  box-shadow: -8px 8px 0px var(--color-accent);
+  transition: all 0.1s linear;
+}
+
+@media (min-width: 992px) {
+  .navbar {
+    min-height: 100vh;
+    width: var(--sidebar-width);
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(75, 75, 75, 0.75)),
+      url(/Portfolio/images/sidebar-img.jpg);
+    background-position: center;
+  }
+
+  .navbar-brand img {
+    border: 8px solid var(--color-accent);
+  }
+
+  /* CONTENT WRAPPER */
+  #content-wrapper {
+    padding-left: var(--sidebar-width);
+  }
+}
