@@ -1,0 +1,299 @@
+.box{
+    height: 200px;
+    border: 10px solid white;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.bg-info{
+    background-color: aqua;
+}
+.bg-primary{
+    background-color: blue;
+}
+.bg-success{
+    background-color: green;
+}
+.bg-secondary{
+    background-color: gray;
+}
+.bg-danger{
+    background-color: red;
+}
+
+.container{
+    width: 80%;
+    margin-right:10%;
+    margin-left: 10%;
+}
+
+.arham-1{
+    width: 8.3%;
+}
+
+.arham-2{
+    width: 16.67%;
+}
+
+.arham-3{
+    width: 25.00%  ;
+}
+
+.arham-4{
+    width: 33.33%  ;
+}
+
+.arham-5{
+    width: 41.67%  ;
+}
+
+.arham-6{
+    width: 50%  ;
+}
+
+.arham-7{
+    width: 58.33%  ;
+}
+
+.arham-8{
+    width: 66.67%  ;
+}
+
+.arham-9{
+    width: 75.00%  ;
+}
+
+.arham-10{
+    width: 83.33%  ;
+}
+
+.arham-11{
+    width: 91.67%  ;
+}
+
+.arham-12{
+    width: 100%  ;
+}
+
+@media (max-width:1200px) {
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .arham-1{
+        width: 8.3%;
+    }
+    
+    .arham-2{
+        width: 16.67%;
+    }
+    
+    .arham-3{
+        width: 25.00%  ;
+    }
+    
+    .arham-4{
+        width: 33.33%  ;
+    }
+    
+    .arham-5{
+        width: 41.67%  ;
+    }
+    
+    .arham-6{
+        width: 50%  ;
+    }
+    
+    .arham-7{
+        width: 58.33%  ;
+    }
+    
+    .arham-8{
+        width: 66.67%  ;
+    }
+    
+    .arham-9{
+        width: 75.00%  ;
+    }
+    
+    .arham-10{
+        width: 83.33%  ;
+    }
+    
+    .arham-11{
+        width: 91.67%  ;
+    }
+    
+    .arham-12{
+        width: 100%  ;
+    }
+}
+
+@media (max-width:800px) {
+
+    .row{
+        display: flex;
+        flex-wrap: wrap;
+
+    .arham-1{
+        width: 8.33%;
+    }
+    
+    .arham-2{
+        width: 26.67%;
+    }
+    
+    .arham-3{
+        width: 45.00%;
+    }
+    
+    .arham-4{
+        width: 63.33%;
+    }
+    
+    .arham-5{
+        width: 81.67%;
+    }
+    
+    .arham-6{
+        width: 100%  ;
+    }
+    
+    .arham-7{
+        width: 100%  ;
+    }
+    
+    .arham-8{
+        width: 100%  ;
+    }
+    
+    .arham-9{
+        width: 100%  ;
+    }
+    
+    .arham-10{
+        width: 100%  ;
+    }
+    
+    .arham-11{
+        width: 100%  ;
+    }
+    
+    .arham-12{
+        width: 100%  ;
+    }   
+}
+
+@media (max-width:600px) {
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .arham-1{
+        width: 100%;
+    }
+    
+    .arham-2{
+        width: 100%;
+    }
+    
+    .arham-3{
+        width: 100%  ;
+    }
+    
+    .arham-4{
+        width: 100%  ;
+    }
+    
+    .arham-5{
+        width: 100%  ;
+    }
+    
+    .arham-6{
+        width: 100%  ;
+    }
+    
+    .arham-7{
+        width: 100%  ;
+    }
+    
+    .arham-8{
+        width: 100%  ;
+    }
+    
+    .arham-9{
+        width: 100%  ;
+    }
+    
+    .arham-10{
+        width: 100%  ;
+    }
+    
+    .arham-11{
+        width: 100%  ;
+    }
+    
+    .arham-12{
+        width: 100%  ;
+    }   
+}
+
+@media (max-width:600px) {
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+    .arham-1{
+        width: 100%;
+    }
+    
+    .arham-2{
+        width: 100%;
+    }
+    
+    .arham-3{
+        width: 100%  ;
+    }
+    
+    .arham-4{
+        width: 100%  ;
+    }
+    
+    .arham-5{
+        width: 100%  ;
+    }
+    
+    .arham-6{
+        width: 100%  ;
+    }
+    
+    .arham-7{
+        width: 100%  ;
+    }
+    
+    .arham-8{
+        width: 100%  ;
+    }
+    
+    .arham-9{
+        width: 100%  ;
+    }
+    
+    .arham-10{
+        width: 100%  ;
+    }
+    
+    .arham-11{
+        width: 100%  ;
+    }
+    
+    .arham-12{
+        width: 100%  ;
+    }   
+}
