@@ -164,13 +164,11 @@ img {
   background-color: var(--color-base);
   border: 3px solid var(--color-accent);
   border-radius: 14px;
-  padding: 15px;
 }
 
 .card:hover {
   cursor: pointer;
   border: 3px solid var(--color-accent);
-  transform: scale(1.05);
 }
 
 .shadow-effect:hover {
