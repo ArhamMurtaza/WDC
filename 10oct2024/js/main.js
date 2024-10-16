@@ -7,6 +7,8 @@ $(document).ready(function(){
         center: true,
         autoplayTimeout: 3000,
         autoplayHoverPause: true,
-        autoHeight: true,
-    });
+        // autoHeight: true,
+        nav:true,
+        navText: ["Previous","Next"],
+        });
 });
