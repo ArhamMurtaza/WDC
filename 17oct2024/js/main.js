@@ -13,4 +13,6 @@ document.getElementById('modulus').textContent = a%b;
 document.getElementById('plus-plus').textContent = ++a;
 document.getElementById('minus-minus').textContent = --a;
 document.getElementById('plus-equal').textContent = a+=5;
-document.getElementById('minus-equal').textContent = a-=10;
+document.getElementById('minus-equal').textContent = a-=5;
+document.getElementById('multiply-equal').textContent = a*=10;
+document.getElementById('divide-equal').textContent = a/=10;
