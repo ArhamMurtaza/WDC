@@ -19,6 +19,7 @@
                         <p class="card-text" id="total_items">0</p>
                         <h5 class="card-title">Total Price</h5>
                         <p class="card-text" id="total_price">0</p>
+                        <button class="btn btn-primary rounded-3" id="clear_all" onclick="clear_all()">Clear All</button>
                     </div>
                 </div>
             </div>
@@ -26,14 +27,15 @@
         <div class="row mt-4">
             <div class="col-md-8">
                 <div class="input-group gap-2">
-                    <select class="form-control rounded-3" id="item_name">
-                        <option value="" disabled selected>Select an Item</option>
-                        <option value="Laptop Charger">Laptop Charger</option>
-                        <option value="Wireless Mouse">Wireless Mouse</option>
-                        <option value="Laptop Stand">Laptop Stand</option>
-                        <option value="External Hard Drive">External Hard Drive</option>
-                        <option value="USB Hub">USB Hub</option>
-                    </select>
+                    <input list="items" class="form-control rounded-3" id="item_name" placeholder="Select an Item">
+                    <datalist id="items">
+                        <option value="Laptop Charger"></option>
+                        <option value="Wireless Mouse"></option>
+                        <option value="Laptop Stand"></option>
+                        <option value="External Hard Drive"></option>
+                        <option value="USB Hub"></option>
+                    </datalist>
+                    <input type="text" class="form-control rounded-3 bg-white" id="price_per_piece" placeholder="Price Per Piece" readonly>
                     <input type="number" class="form-control rounded-3" id="item_quantity" placeholder="Quantity">
                     <input type="text" class="form-control rounded-3 bg-white" id="item_price" placeholder="Price" readonly>
                     <button class="btn btn-primary rounded-3" id="add_item" onclick="add_item_function()">Add Item</button>
@@ -42,16 +44,17 @@
         </div>
         <div class="row mt-4">
             <div class="col-md-8">
-                <table class="item_table table table-bordered table-hover">
+                <table class="item_table table table-bordered">
                     <thead>
                         <tr>
                             <th>Item Name</th>
                             <th>Quantity</th>
+                            <th>Price per piece</th>
                             <th>Price</th>
                             <th class="text-center">Action</th>
                         </tr>
                     </thead>
-                    <tbody id="item_list">
+                    <tbody id="item_list" class="text-white">
 
                     </tbody>
                 </table>
