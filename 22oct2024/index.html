@@ -7,13 +7,55 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
 </head>
-<body>
+<body class="bg-secondary">
     
-    <div class="display-1 text-center mt-4">Mini-Inventory System</div>
-    <div class="container">
-        <div class="form-floating">
-            <input type="email" class="form-control" id="item_name" placeholder="">
-            <label for="floatingInput">Email address</label>
+    <div class="Main_Name display-1 text-center mt-4">Mini-Inventory System</div>
+    <div class="item_add_section container-fluid p-5">
+        <div class="row mt-5">
+            <div class="col-md-4">
+                <div class="total_card card">
+                    <div class="card-body">
+                        <h5 class="card-title">Total Items</h5>
+                        <p class="card-text" id="total_items">0</p>
+                        <h5 class="card-title">Total Price</h5>
+                        <p class="card-text" id="total_price">0</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <div class="input-group gap-2">
+                    <select class="form-control rounded-3" id="item_name">
+                        <option value="" disabled selected>Select an Item</option>
+                        <option value="Laptop Charger">Laptop Charger</option>
+                        <option value="Wireless Mouse">Wireless Mouse</option>
+                        <option value="Laptop Stand">Laptop Stand</option>
+                        <option value="External Hard Drive">External Hard Drive</option>
+                        <option value="USB Hub">USB Hub</option>
+                    </select>
+                    <input type="number" class="form-control rounded-3" id="item_quantity" placeholder="Quantity">
+                    <input type="text" class="form-control rounded-3 bg-white" id="item_price" placeholder="Price" readonly>
+                    <button class="btn btn-primary rounded-3" id="add_item" onclick="add_item_function()">Add Item</button>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-8">
+                <table class="item_table table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Item Name</th>
+                            <th>Quantity</th>
+                            <th>Price</th>
+                            <th class="text-center">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="item_list">
+
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 

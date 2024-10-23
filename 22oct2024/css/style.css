@@ -1,0 +1,12 @@
+.Main_Name {
+    font-family: 'Times New Roman', Times, serif;
+    position: relative;
+    top: 50px;
+}
+
+.total_card {
+    position: absolute !important;
+    right: 10%;
+    width: 20%;
+    z-index: 100;
+}
