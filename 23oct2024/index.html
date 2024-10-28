@@ -21,19 +21,47 @@
             <li class="nav-item active">
               <a class="nav-link" href="#">Home</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Downloads
-              </a>
-              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                <a class="dropdown-item" href="#">Admit Card</a>
-                <a class="dropdown-item" href="#">Result</a>
-                <a class="dropdown-item" href="#">Fee Receipt</a>
+            <li class="nav-item">
+              <div class="cart-container">
+                  <a class="nav-link d-flex align-items-center" data-bs-toggle="offcanvas" href="#offcanvasRight" role="button" aria-controls="offcanvasExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" style="width: 1.5rem; height: 1.5rem;"><path d="M0 24C0 10.7 10.7 0 24 0L69.5 0c22 0 41.5 12.8 50.6 32l411 0c26.3 0 45.5 25 38.6 50.4l-41 152.3c-8.5 31.4-37 53.3-69.5 53.3l-288.5 0 5.4 28.5c2.2 11.3 12.1 19.5 23.6 19.5L488 336c13.3 0 24 10.7 24 24s-10.7 24-24 24l-288.3 0c-34.6 0-64.3-24.6-70.7-58.5L77.4 54.5c-.7-3.8-4-6.5-7.9-6.5L24 48C10.7 48 0 37.3 0 24zM128 464a48 48 0 1 1 96 0 48 48 0 1 1 -96 0zm336-48a48 48 0 1 1 0 96 48 48 0 1 1 0-96z"/></svg><span class="cartcounter badge rounded-pill bg-danger" id="cart_counter">0</span>
+                </a>
               </div>
             </li>
           </ul>
         </div>
       </nav>
+
+      <div class="offcanvas offcanvas-end bg-secondary" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">Your Cart</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+            <div class="total_price">
+              <p class="fs-5 fw-bold">Total Price: <span id="total_price">0</span></p>
+            </div>
+            <div class="total_items">
+              <p class="fs-5 fw-bold">Total Items: <span id="total_items">0</span></p>
+            </div>
+            <p class="text-center fs-5 fw-bold" id="cart_empty">Your Cart is Empty</p>
+            <div id="cart_items">
+              <table class="cart_table table table-bordered">
+                <thead id="cart_items_head" class="d-none">
+                  <th>Picture</th>
+                  <th>Name</th>
+                  <th>Fee</th>
+                  <th>Action</th>
+                </thead>
+                <tbody id="cart_items_body">
+                  
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
 
     <div class="display-2 text-center mt-5 mb-4">Dynamic Cards</div>
     <div class="container-fluid">
@@ -43,10 +71,7 @@
     </div>
 
     <!-- Scripts -->
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 </html>
