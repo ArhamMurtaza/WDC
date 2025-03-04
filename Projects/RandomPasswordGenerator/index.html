@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold">Random Password Generator</h1>
+        <div class="form-group">
+            <label for="passwordLength" class="mb-2">Password Length</label>
+            <input type="number" id="passwordLength" class="form-control text-center w-25 mx-auto" min="8" max="32" value="16">
+        </div>
+        <div class="form-group">
+            <label for="includeUppercase">Include Uppercase</label>
+            <input type="checkbox" id="includeUppercase" class="form-check-input">
+        </div>
+        <div class="form-group">
+            <label for="includeLowercase">Include Lowercase</label>
+            <input type="checkbox" id="includeLowercase" class="form-check-input">
+        </div>
+        <div class="form-group">
+            <label for="includeNumbers">Include Numbers</label>
+            <input type="checkbox" id="includeNumbers" class="form-check-input">
+        </div>
+        <div class="form-group">
+            <label for="includeSymbols">Include Symbols</label>
+            <input type="checkbox" id="includeSymbols" class="form-check-input">
+        </div>
+        <button class="btn btn-dark mx-auto w-50" id="generate" onclick="generatePassword()">Generate Password</button>
+        <div class="form-group">
+            <label for="generatedPassword">Generated Password</label>
+            <input type="textbox" id="generatedPassword" class="form-control text-center w-75 mx-auto" readonly>
+        </div>
+        <button class="btn btn-dark mx-auto w-25" id="copy" onclick="copyPassword()">Copy Password</button>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

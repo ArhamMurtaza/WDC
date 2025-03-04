@@ -1,0 +1,50 @@
+body {
+    background: linear-gradient(to top, hsl(0, 0%, 0%), hsl(0, 0%, 75%));
+    font-family: 'Verdana', sans-serif;
+    overflow-x: hidden;
+    height: 100vh;
+    transition: all 0.3s;
+}
+
+.container {
+    margin-top: 10%;
+    padding: 20px;
+}
+
+.input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#inputValue {
+    width:50%;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid #ffffff;
+    font-size: 1.2rem;
+}
+
+#inputValue:hover {
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0, 1);
+    transition: 0.3s;
+}
+
+#rollBtn, #clearBtn {
+    border-radius: 5px;
+    border: 2px solid #ffffff;
+    width: 100px;
+}
+
+.output-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dice-image {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+

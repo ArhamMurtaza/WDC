@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="display-6 mt-5 mb-4 fw-bold text-center">Temperature Converter</h1>
+        <div class="input-container">
+            <input type="number" id="inputValue" class="form-control mb-2" placeholder="Enter temperature">
+            <div class="radio-group">
+                <input type="radio" id="toCelsius" name="unit" value="celsius">
+                <label for="celsius">°F → °C</label><br>
+                <input type="radio" id="toFahrenheit" name="unit" value="fahrenheit">
+                <label for="fahrenheit">°C → °F</label>
+            </div>
+        </div>
+        <button class="btn btn-primary mt-3 fw-bold" id="convertBtn" onclick="convertTemp()">Convert</button>
+        <div class="output-container">
+            <p id="outputValue" class="fw-bold mt-5"></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

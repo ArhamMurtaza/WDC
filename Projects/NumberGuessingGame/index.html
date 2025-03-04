@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <h1 class="display-4 fw-bold mt-3">Number Guessing Game</h1>
+        <p class="lead fw-normal fs-5 mt-4 mb-2" id="guessRange">Try and guess a random number between 1 and 100.</p>
+        <p class="lead fw-normal fs-6 mb-1" id="guessAttempts">You have 10 attempts to guess the right number.</p>
+        
+        <label for="guessField" class="fs-4 fw-normal mb-2">Your guess: </label><br>
+        <input type="number" id="guessField" class="input-field fs-4"><br>
+        <button class="btn btn-primary border-1 px-3 py-2 mt-2" onclick="checkGuess()">Guess</button>
+        <button class="btn btn-secondary border-1 px-3 py-2 mt-2" onclick="resetGame()">Restart</button>
+        
+        <div class="result-container">
+            <p id="guessSlot" class="mt-4"></p>
+            <p id="remaining" class="mt-4"></p>
+            <p id="result" class="mt-4"></p>
+            <p id="triesTaken" class="mt-4"></p>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+</html>
